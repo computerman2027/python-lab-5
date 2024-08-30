@@ -26,6 +26,7 @@ int main()
 		{
 			temp[k2]=' ';
 			temp[k2+1]='\0';
+			printf("temp = %s\n",temp);
 			strcat(temp,ans1);
 			strcpy(ans1,temp);
 			strcpy(temp,"");
@@ -35,6 +36,7 @@ int main()
 		else
 		{
 			temp[k2]=str2[i];
+			printf("temp 1 = %s\n",temp);
 			k2++;
 		}
 		
