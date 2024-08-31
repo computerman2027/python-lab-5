@@ -8,16 +8,15 @@ if (l<3 or l>4):
 else:
     for i in range(l):
         for j in range(l):
-            if j==i:
-                continue
-            for k in range(l):
-                if not(k!=j and k!=i):
-                    continue
-                if l==3:
-                    print(st[i]+st[j]+st[k])
-                else:
-                    for m in range(l):
-                        if not(m!=j and m!=i and m!=k):
-                            continue
-                        print(st[i]+st[j]+st[k]+st[m])
+            if j!=i:
+                for k in range(l):
+                    if not(k!=j and k!=i):
+                        continue
+                    if l==3:
+                        print(st[i]+st[j]+st[k])
+                    else:
+                        for m in range(l):
+                            if not(m!=j and m!=i and m!=k):
+                                continue
+                            print(st[i]+st[j]+st[k]+st[m])
                     
